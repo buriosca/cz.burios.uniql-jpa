@@ -1,0 +1,1 @@
+# cz.burios.uniql-jpa
