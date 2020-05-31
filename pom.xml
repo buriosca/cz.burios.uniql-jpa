@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.ver>11</java.ver>
+		<java.ver>1.8</java.ver>
 	</properties>
 
 	<dependencies>
