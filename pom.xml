@@ -16,6 +16,110 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- jdbc -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.38</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\mysql-connector-java-5.1.38.jar</systemPath>			
+		</dependency>
+		
+		<!-- Appache Commons -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+			<version>1.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+		<!-- Java 9+ -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\jaxb-api-2.3.0.jar</systemPath>			
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.3.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\jaxb-impl-2.3.0.jar</systemPath>			
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.3.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\jaxb-core-2.3.0.jar</systemPath>			
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\activation-1.1.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>javaee-api</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\javaee-api-7.0.jar</systemPath>			
+		</dependency>
+		<dependency>
+			<groupId>stringtemplate</groupId>
+			<artifactId>stringtemplate</artifactId>
+			<version>3.2</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\lib\stringtemplate-3.2.jar</systemPath>			
+		</dependency>
+	
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+			<version>0.9.11</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -26,7 +130,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<release>${java.ver}</release>
+					<encoding>UTF-8</encoding>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
